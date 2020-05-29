@@ -1,0 +1,32 @@
+{
+  "name": "ian-nisbet/gdpr",
+  "require": {
+    "ian-nisbet/social-auth": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "IanNisbet\\Gdpr\\": "src"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@https://github.com/ian-nisbet/social-auth.git"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "IanNisbet\\Gdpr\\GdprProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": false,
+    "platform": {
+      "php": "7.2"
+    }
+  }
+}
